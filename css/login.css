@@ -4,8 +4,9 @@
     text-decoration: none;
     font-family: sans-serif;
 }
+
 body{
-    background-image: url(../recursos/fondo.gif);
+    background-image: url(../imgs/fondoLogin.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -59,7 +60,7 @@ main{
 }
 .box button:hover{
     background: white;
-    color: #3a7926;
+    color: black;
 }
 .loginRegister{
     display: flex;
@@ -102,18 +103,7 @@ main{
 .loginRegister form input:hover{
     font-size: 24px;
 }
-.loginRegister form button{
-    padding: 10px 40px;
-    margin-top: 40px;
-    border: none;
-    font-size: 14px;
-    background:#3a7926;
-    color: white;
-    cursor: pointer;
-    outline: none;
-    transition: all 300ms;
-}
-.loginRegister form button:hover{
+.enviar:hover{
     font-size: 14px;
     outline: none;
     cursor: pointer;
@@ -127,4 +117,8 @@ main{
 }
 .register{
     display: none;
+}
+
+.register form button{
+    background: green;
 }
