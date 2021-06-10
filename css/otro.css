@@ -1,107 +1,171 @@
-
-body{
-margin: 0;
-padding: 0;
-background-color: black;
-}
-#abrir{
-width:150px;
-height:50px;
-display:block;
-margin:100px auto;
-}
-.show{
-display:block;
-}
-.hidden{
-display:none;
-}
-.ligthbox{
-position: fixed;
-top:0px;
-left:0px;
-width: 100%;
-height: 100%;
-background:rgba(0,0,0,.6);
-}
-.login_content{
-position: relative;
-background-color: #999;
-width: 353px;
-height: 230px;
-margin-right: auto;
-margin-left: auto;
-top:50%;
-margin-top: -115px;
-border-radius: 5%;
-}
-.close_button{
-position: absolute;
-background-color: #333;
-top: 10px;
-right: 10px;
-color: white;
-width: 40px;
-height: 40px;
-text-align: center;
-border-radius: 20px;
-cursor: pointer;
-font-size: 23px;
-line-height: 34px;
-font-family: verdana;
-}
-.close_button:hover{
-background-color: white;
-color: #333;
-}
-#input_name{
-position: absolute;
-top: 70px;
-left: 60px;
-width: 210px;
-height: 28px;
-border-radius: 6px;
-}
-#input_password{
-position: absolute;
-top: 113px;
-left: 60px;
-width: 210px;
-height: 28px;
-border-radius: 6px;
-}
-#button_login{
-position: absolute;
-top: 160px;
-left: 60px;
-width: 110px;
-height: 40px;
-border-radius: 5px;
-}
-#button_cancel{
-position: absolute;
-top: 160px;
-left: 175px;
-width: 101px;
-height: 40px;
-border-radius: 5px;
-}
-
-html{
-	background: url(../imgs/holia.gif);
-	background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed; 
-}
 #cuadricula{
 	display: grid;
-	grid-template-columns: repeat(10, 1fr);
-	grid-template-rows: repeat(10, 1fr);
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 	width: 500px;
 	width: 500px;
 	margin: 0 auto;
-	background-color: white
-	}
+}
+.disponible{
+	background-color: white;
+	border: 2px solid black;
+	text-align: center;
+	border-radius: 6px;
+}
+.reservado{
+	background: url(../imgs/grad.gif);
+	font-size: 20px;
+	font-family: 'Arial Rounded Mt';
+	text-align: center;
+	color: black;
+	border: 2px solid gray;
+	border-radius: 6px;
+}
+
+
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url(../imgs/fondoReservas.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+#abrir{
+  width:150px;
+  height:50px;
+  display:block;
+  margin:100px auto;
+}
+.show{
+  display:block;
+}
+.hidden{
+  display:none;
+}
+.ligthbox{
+	position: fixed;
+	top:0px;
+	left:0px;
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,.6);
+}
+.login_content{
+	position: relative;
+	background-color:white;
+	width: 353px;
+	height: 230px;
+	margin-right: auto;
+	margin-left: auto;
+	top:50%;
+	margin-top: -115px;
+	border-radius: 5%;
+}
+.close_button{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: white;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	border-radius: 20px;
+	cursor: pointer;
+	font-size: 23px;
+	line-height: 34px;
+	font-family: verdana;
+	transition: 300ms;
+}
+.close_button:hover{
+	width: 45px;
+	height: 45px;
+}
+#input_name{
+	font-size: 30px;
+	position: absolute;
+	top: 70px;
+	left: 40px;
+	width: 250px;
+	height: 40px;
+	border-radius: 6px;
+	border: none;
+	outline: none;
+	text-decoration: none;
+	background-color: rgb(165, 165, 165);
+	transition: 300ms;
+}
+#input_name:hover{
+	width:255px;
+	height:45px;
+	background: transparent;
+	border: 2px solid black;
+}
+#input_password{
+	position: absolute;
+	top: 113px;
+	left: 60px;
+	width: 210px;
+	height: 28px;
+	border-radius: 6px;
+}
+#button_login{
+	cursor: pointer;
+	position: absolute;
+	font-size: 20px;
+	top: 160px;
+	left:105px;
+	width: 110px;
+	height: 40px;
+	border-radius: 5px;
+	border: none;
+	background-color: rgb(165, 165, 165);
+	transition: 300ms;
+}
+#button_login:hover{
+	width: 115px;
+	height: 45px;
+	background: transparent;
+	border: 2px solid black;
+}
+#button_cancel{
+	position: absolute;
+	top: 160px;
+	left: 175px;
+	width: 101px;
+	height: 40px;
+	border-radius: 5px;
+}
+.tittle{
+	margin-top: 100px;
+	text-align: center;
+	font-size: 4em;
+	font-family:'Elephant';
+	color:snow;
+	border-radius: 100%;
+	text-shadow: 2px 2px 5px black, 5px 5px 10px rgb(17, 81, 100), 10px 10px 20px rgb(17, 81, 100);
+}
+.botonAgregar{
+	cursor: pointer;
+	width: 30px;
+}
+.salir{
+	display: inline;
+	margin-top: 30px;
+	text-align: center;
+	font-size: 30px;
+	font-family:'Baskerville Old Face';
+	color:snow;
+	border-radius: 100%;
+	text-decoration: none;
+	transition: 300ms;
+	
+}
+.salir:hover{
+	font-size: 50px;
+	text-shadow: 2px 2px 5px black, 5px 5px 10px rgb(17, 81, 100), 10px 10px 20px rgb(17, 81, 100);
+}
+
