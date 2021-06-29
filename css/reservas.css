@@ -1,10 +1,4 @@
-html{
-	background-image: url(../imgs/hola.png);
-	background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed; 
-}
+
 #cuadricula{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -16,21 +10,23 @@ html{
 	margin: 0 auto;
 }
 .btn_agregar{
-	position: absolute;
-	right: 10px;
+	margin: auto;
+	margin-right: 10px;
 	bottom: 5px;
-	width: 25px;
-	height: 25px;
+	width: 30px;
+	height: 30px;
 	cursor: pointer;
 }
-
-.btn_editar{
+.btn_editar,.btn_eliminar{
 	position: absolute;
 	right: 10px;
 	bottom: 5px;
 	width: 16px;
 	height: 16px;
 	cursor: pointer;
+}
+.btn_editar{
+	right: 30px;
 }
 
 .disponible{
@@ -43,14 +39,13 @@ html{
 }
 .reservado{
 	position: relative;
-	background: url(../imgs/grad.gif);
+	background: url(../imgs/reservado_bg.gif);
 	text-align: center;
 	color: black;
 	border: 2px solid gray;
 	font-family: 'Arial Rounded Mt';
 	border-radius: 6px;
 }
-
 
 body{
 	margin: 0;
@@ -102,10 +97,8 @@ body{
 	font-size: 23px;
 	line-height: 34px;
 	font-family: verdana;
-	transition: 300ms;
 }
 .close_button:hover{
-	width: 35px;
 	background-color: white;
 	color: #333;
 }
@@ -148,7 +141,10 @@ input_name:hover{
 	height: 40px;
 	border-radius: 5px;
 }
-.tittle{
+button{
+	width: 40px;
+}
+#tittle{
 	margin-top: 20px;
 	text-align: center;
 	font-size: 3em;
@@ -156,7 +152,8 @@ input_name:hover{
 	border-radius: 100%;
 	text-shadow: 2px 2px 5px black, 5px 5px 10px rgb(17, 81, 100), 10px 10px 20px rgb(17, 81, 100);
 }
-.salir{
+#salir{
+	cursor: pointer;
 	margin-top: 20px;
 	text-align: center;
 	font-size: 20px;
@@ -166,7 +163,7 @@ input_name:hover{
 	text-decoration: none;
 	transition: 300ms;
 }
-.salir:hover{
+#salir:hover{
 	color: rgb(202, 202, 202);
 	font-size:25px;
 }
